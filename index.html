@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Task Management Application</title>
+</head>
+<body>
+  <section id="header" class="header">
+    <header>
+      <h1>Task Master Lite</h1>
+    </header>
+    <div class="dark-mode-toggle">
+      <h2>Lite Mode</h2>
+    </div>
+  </section>
+  <section id="task-input-section" class="task-input-section">
+    <div id="form" class="form">
+      <form>
+        <label for="addTask">Add Task</label><br>
+        <input type="text" id="add-task" name="addTask" placeholder="Enter task here" required="you have to enter a task"><br>
+        <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
+        <input type="submit" value="Add Task" id="submit"><br>
+      </form>
+    </div>
+  </section>
+  <section id="filter-section" class="filter-section">
+    <label for="filter">Filter:</label>
+    <button id="filter-all" class="btn">All</button>
+    <button id="filter-completed" class="btn">Completed</button>
+    <button id="filter-pending" class="btn">Pending</button>
+  </section>
+  <section id="task-list" class="task-list">
+    <div class="list">
+      <h2>Task List</h2>
+      <div id="ul" class="ul">
+        <ul></ul>
+      </div>
+      <p>Click task to <b><i>Mark</i></b> complete, and double click to <b><i>Delete</i></b></p>
+    </div>
+  </section>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
